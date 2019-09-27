@@ -5,7 +5,7 @@
 
 ![](https://img.shields.io/badge/dependencies-2-brightgreen)
 ![](https://img.shields.io/badge/license-MIT-brightgreen)
-![](https://img.shields.io/badge/version-1.1.4-brightgreen)
+![](https://img.shields.io/badge/version-1.1.6-brightgreen)
 
 # 使用方法
 
