@@ -1,0 +1,8 @@
+# modules
+node_modules
+
+# macOS
+.DS_STORE
+
+# IDE / Editors
+.idea/
