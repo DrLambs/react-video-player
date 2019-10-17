@@ -18,7 +18,18 @@ class VideoPlayer extends React.Component<VideoPlayerProps> {
     } catch (e) {
       console.log(e);
     }
-    videojs(vid);
+    // 组件挂载, 实例化播放器
+    videojs(vid, {
+      controls: true,
+      autoplay: true,
+      preload: 'auto',
+    });
+  }
+
+  public componentWillUnmount() {
+    const { vid } = this.props;
+    // 组件卸载, 销毁播放器
+    videojs(vid).dispose();
   }
 
   public render() {
@@ -27,8 +38,6 @@ class VideoPlayer extends React.Component<VideoPlayerProps> {
       <div className="video-player">
         <video
           id={vid}
-          controls
-          preload="auto"
           className="video-js vjs-default-skin"
           {...{
             style,
